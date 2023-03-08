@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MI CURRICULUM VITAE</title>
+    <link rel="icon" type="image/x-icon" href="ICONO/favicon.ico">
+</head>
+   <style>
+        body {
+          background-color: bisque;                 
+        }
+        div{
+            background-color: white;
+            border: 1px solid black;
+            padding: 12px;
+            width: 500px;
+            margin: auto;
+        }
+        fieldset{
+            margin-bottom: 12px;
+        }
+        legend{
+            background-color:hsl(318, 66%, 66%);
+            padding: 5px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        img{
+            border-radius: 50%;
+            margin-bottom: 12px;
+            align-items: center;               
+            }
+        </style>
+<body>
+    <div id="datos">
+        <img src="IMAGEN/FOTO.jpeg" alt="4x4" width="120px" height="120x">        
+                 <fieldset>
+            <legend> <label for="" id="datos-generales"> <strong> Datos Generales </strong>  </label> </legend>
+            <ul id="ul-datos-generales" >
+                 <li> <strong>Nombre y Apellido:</strong> María Verónica Herrera</li>
+                 <li> <strong>Domicilio:</strong> Benjamin Paz s/n</li>
+                 <li> <strong>Dpto:</strong>Trancas</li>
+                 <li> <strong>Prov.:</strong>Tucumán</li>
+                 <li> <strong>Edad:</strong>38</li>
+                 <li> <strong>Celular:</strong>(0381) 4902628</li>
+                 <li> <strong>Email:</strong>veronicahdeb20@gmail.com</li>
+            </ul>
+         </fieldset>
+            <fieldset>
+                  <legend id="formacion-academica"> <strong>Formación Academica</strong> </legend>
+                  <ul id="ul-formacion-academica"  style="display: none">
+                    <li>Secundario Completo</li>
+                    <li>Secretaria Administrativa</li>
+                    <li>Dactilografia</li>
+                    <li>Computacion: Word, Windows, Power Point y Excel</li>
+                    <li>Cosmetologa-Cosmiatra</li>
+                    <li>DermatoCosmiatra</li>
+                    <li>Cosmetica Organica</li>
+                  </ul>
+            </fieldset>
+            <fieldset>
+                <legend id="experiencia-laboral"> <strong>Experiencia Laboral</strong> </legend>
+                <ul id="ul-experiencia-laboral"  style="display: none">
+                    <li>Secretaria Administrativa</li>
+                    <li>Tecnica en Histologia Patologica</li>
+                    <li>Cosmetologa-Cosmiatra</li>
+                </ul>
+            </fieldset>
+              
+                  
+        </fieldset>
+
+    </div>
+    <script>
+
+        const datos_generales =  document.getElementById("datos-generales") .addEventListener("click", function(){
+            let elemento = document.getElementById("ul-datos-generales")
+            if ( elemento.style.display === 'none'){
+                elemento.style.display = ''
+            }else{
+                elemento.style.display = 'none'
+            }
+        }) ;
+
+
+        const formacion_academica =  document.getElementById("formacion-academica") .addEventListener("click", function(){
+            let elemento = document.getElementById("ul-formacion-academica")
+            if ( elemento.style.display === 'none'){
+                elemento.style.display = ''
+            }else{
+                elemento.style.display = 'none'
+            }
+        }) ;
+
+
+        
+        const experiencia_laboral =  document.getElementById("experiencia-laboral") .addEventListener("click", function(){
+            let elemento = document.getElementById("ul-experiencia-laboral")
+            if ( elemento.style.display === 'none'){
+                elemento.style.display = ''
+            }else{
+                elemento.style.display = 'none'
+            }
+        }) ;
+
+    </script>
+</body>
+</html>
